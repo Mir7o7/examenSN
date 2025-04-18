@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Persona</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Registrar Persona</h1>
+    <form method="POST" action="/">
+        <label for="dni">DNI:</label>
+        <input type="text" name="dni" id="dni" required>
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" required>
+        
+        <label for="direccion">Dirección:</label>
+        <input type="text" name="direccion" id="direccion">
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="text" name="telefono" id="telefono">
+        
+        <button type="submit">Guardar</button>
+    </form>
+
+    <a href="/administrar">Ver registros →</a>
+</body>
+</html>
